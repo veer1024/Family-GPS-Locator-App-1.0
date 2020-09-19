@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+  android:orientation="vertical"
+   android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:descendantFocusability="beforeDescendants"
+    tools:context=".about_us">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+android:layout_marginBottom="10dp"
+       android:layout_marginTop="10dp"
+        android:fillViewport="true"
+        android:scrollbars="vertical"
+        android:scrollbarStyle="outsideInset"
+        android:focusableInTouchMode="true"
+       android:descendantFocusability="beforeDescendants">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <VideoView
+                android:layout_gravity="center_horizontal"
+
+                android:id="@+id/videoView"
+               android:layout_width="match_parent"
+                android:layout_height="500dp"
+                />
+
+            <TextView
+                android:id="@+id/aboutapp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textDirection="firstStrongLtr"
+                android:autoSizeMaxTextSize="@dimen/cardview_default_radius"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="About App:
+Family GPS Locator App is one of the finest app for live tracking based on GPS location tracking service.you can allow peoples to track your
+location and you can track peoples whom allowed you to track them using this app.this will provide the lastknown location with high accuracy.you can
+update the trackersList with the server at any time.Auto Location Update Service will automatically update your location even when you are
+not interacting with your app.always shows a notification in the notification panel,which indicates you that the Background  services are
+running or not so you can aware about the location updates.automatic restart of backgrounnd services after every boot.
+It is completely ads free App.consist of an attractive UI and beautiful animations , and you will become familier with it in couple of seconds.Automatically delete your
+account whenever you delete the app. so no one can keep your location records.
+Tips and Tricks:
+1) if Trackeslist and ToTracklist are empty,then Refresh the app,(Sometimes reboot is also required).
+2) if location is null, then make sure that your gps is on.
+3)please avoid saving contacts with name containing special characters.
+4) you can only allow those to track your location, who are in your contacts.
+5) in case of any query or any problem related with the App, feel free to DM Us"
+                tools:ignore="HardcodedText" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:orientation="horizontal">
+
+                <ImageView
+
+                   android:id="@+id/vaishnavas"
+                    android:layout_width="90dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/vaishnavaslogo"
+                    tools:srcCompat="@tools:sample/avatars" />
+
+                <TextView
+                    android:id="@+id/aboutUs"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textDirection="firstStrongLtr"
+                    android:autoSizeMaxTextSize="@dimen/cardview_default_radius"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="About Us:
+ App developed By: VAISHNAVAS(DEVELOPERS AND PENETRATION TESTERS)
+EMAIL: viraj1024.1024@gmail.com
+Follow Us On Instagram: " />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal">
+                <ImageView
+
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/iconinsta"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/instaicon"
+                    tools:srcCompat="@tools:sample/avatars" />
+                <TextView
+                    android:id="@+id/followus"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textDirection="firstStrongLtr"
+                    android:autoSizeMaxTextSize="@dimen/cardview_default_radius"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/FollowUs" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/logokaar"
+                    android:layout_width="90dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/logokaar"
+                    tools:srcCompat="@tools:sample/avatars" />
+                <TextView
+                    android:id="@+id/logokarintro"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textDirection="firstStrongLtr"
+                    android:autoSizeMaxTextSize="@dimen/cardview_default_radius"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="LOGO DESIGING DONE BY:
+ Ajay Sankhare~UI developer(@logo.kaar)" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/otherapps"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textDirection="firstStrongLtr"
+                android:autoSizeMaxTextSize="@dimen/cardview_default_radius"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="try our other apps:" />
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:text="Tic Tac Toe !!! simplest way to pass your time..."
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline" />
+            <ImageView
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/imageView"
+                android:layout_width="428dp"
+                android:layout_height="300dp"
+                android:src="@drawable/tictacatoe"
+                tools:srcCompat="@tools:sample/avatars" />
+            <TextView
+                android:id="@+id/otherapp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textDirection="firstStrongLtr"
+                android:autoSizeMaxTextSize="@dimen/cardview_default_radius"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tictactoeget" />
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

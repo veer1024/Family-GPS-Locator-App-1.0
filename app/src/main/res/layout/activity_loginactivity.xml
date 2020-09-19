@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".loginactivity">
+
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical">
+
+    <ImageView
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/imageView"
+        android:layout_width="428dp"
+        android:layout_height="300dp"
+        android:src="@drawable/homelogo"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <RelativeLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical"
+       android:padding="20dp">
+
+      <TextView
+          android:id="@+id/textView"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerHorizontal="true"
+          android:layout_marginTop="25dp"
+          android:text="May I ask your phone number?"
+          android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline" />
+
+      <LinearLayout
+          android:id="@+id/linearlayout"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/textView"
+          android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/spinnercontriescode"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/phonenumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:digits="0123456789"
+
+            android:drawablePadding="10dp"
+            android:hint="enter your mobile number"
+            android:inputType="phone"
+            android:maxLength="10" />
+      </LinearLayout>
+
+      <Button
+          android:id="@+id/register"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/linearlayout"
+          android:layout_centerHorizontal="true"
+          android:layout_marginTop="15dp"
+          android:background="@color/darkblue"
+          android:onClick="register"
+          android:text="Continue"
+          android:textAllCaps="false"
+          android:textColor="#cdd8f1" />
+
+      <ProgressBar
+          android:id="@+id/progressBar"
+          style="?android:attr/progressBarStyle"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/register"
+          android:layout_centerHorizontal="true"
+          android:layout_marginTop="15dp"
+          android:visibility="gone" />
+
+    </RelativeLayout>
+
+  </LinearLayout>
+
+</RelativeLayout>

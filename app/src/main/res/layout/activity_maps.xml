@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    tools:context=".MapsActivity"
+    android:layout_width="match_parent"
+    >
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        app:pressedTranslationZ="12dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="40dp"
+       android:src="@drawable/addbutton"
+        android:backgroundTintMode="src_over"
+        tools:ignore="RelativeOverlap" />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/cross"
+        android:visibility="invisible"
+        android:onClick="close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        app:pressedTranslationZ="12dp"
+        android:layout_marginEnd="150dp"
+        android:layout_marginBottom="40dp"
+        android:src="@drawable/addbutton"
+        android:backgroundTintMode="src_over"
+        tools:ignore="RelativeOverlap" />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/minus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_above="@+id/add"
+        app:pressedTranslationZ="12dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="40dp"
+        android:onClick="trackerlist"
+        android:visibility="invisible"
+        android:elevation="6dp"
+        android:backgroundTintMode="src_over"
+       android:src="@drawable/minusbutton" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/share"
+        android:layout_marginBottom="40dp"
+        android:layout_above="@+id/minus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="share"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="15dp"
+        android:visibility="invisible"
+        android:elevation="6dp"
+        app:pressedTranslationZ="12dp"
+        android:src="@drawable/share"
+        android:backgroundTintMode="src_over"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/mylocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:pressedTranslationZ="12dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="40dp"
+       android:onClick="mylocation"
+        android:src="@drawable/mylocation"
+        android:color="@color/blue"
+        android:backgroundTintMode="src_over"/>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/refresh"
+        android:layout_width="wrap_content"
+        android:layout_above="@id/trackerslist"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_3d_rotation_white_24dp"
+        android:color="@color/blue"
+        android:layout_marginStart="15dp"
+        android:onClick="refreshingserver"
+        android:layout_marginBottom="20dp"
+        android:backgroundTintMode="src_over"/>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/trackerslist"
+        android:layout_width="wrap_content"
+        android:layout_above="@id/mylocation"
+        android:layout_height="wrap_content"
+        android:src="@drawable/threepeolegrp"
+        android:layout_marginStart="15dp"
+        android:onClick="letstrack"
+        android:layout_marginBottom="350dp"
+        android:backgroundTintMode="src_over"/>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/aboutus"
+        android:layout_above="@id/share"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="90dp"
+        android:onClick="aboutus"
+     android:src="@drawable/vaishnavaslogo"
+       android:layout_alignParentEnd="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTintMode="src_over"/>
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ListView
+        android:id="@+id/contactlistview"
+        android:layout_width="200dp"
+        android:layout_height="550dp"
+
+        android:layout_above="@+id/add"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="4dp"
+        android:layout_toStartOf="@+id/share"
+        android:background="@color/white"
+        android:divider="@color/darkblue"
+        android:dividerHeight="2dp"
+        android:foregroundGravity="center"
+        android:visibility="invisible" />
+    <ListView
+        android:id="@+id/trackerslistview"
+        android:layout_width="200dp"
+        android:layout_height="550dp"
+        android:foregroundGravity="center"
+        android:layout_toStartOf="@id/share"
+        android:divider="@color/darkblue"
+        android:dividerHeight="2dp"
+        android:layout_marginEnd="13dp"
+        android:layout_above="@id/add"
+        android:layout_marginBottom="4dp"
+        android:background="@color/white"
+        android:visibility="invisible"
+        />
+    <ListView
+        android:id="@+id/totracklistview"
+        android:layout_width="200dp"
+        android:layout_height="550dp"
+        android:foregroundGravity="center"
+        android:layout_toStartOf="@id/share"
+        android:divider="@color/darkblue"
+        android:dividerHeight="2dp"
+        android:layout_marginEnd="13dp"
+        android:layout_above="@id/add"
+        android:layout_marginBottom="4dp"
+       android:background="@color/white"
+        android:visibility="invisible"
+        />
+
+
+    <TextView
+     android:visibility="invisible"
+       android:textStyle="bold"
+        android:textAlignment="center"
+        android:textDirection="firstStrongLtr"
+        android:autoSizeMaxTextSize="@dimen/cardview_default_radius"
+        android:id="@+id/textView2"
+        android:layout_width="200dp"
+       android:layout_height="30dp"
+        android:layout_above="@+id/contactlistview"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="11dp"
+        android:layout_toStartOf="@+id/aboutus"
+        android:text="TextView" />
+</RelativeLayout>

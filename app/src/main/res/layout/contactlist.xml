@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_gravity="center"
+    android:background="#00000000"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+<ListView
+    android:layout_width="150dp"
+    android:layout_height="450dp"
+    android:background="@color/white"
+    android:id="@+id/contactlistview"
+    android:divider="@color/darkblue"
+    android:foregroundGravity="center"
+    android:dividerHeight="2dp"
+    ></ListView>
+</RelativeLayout>
