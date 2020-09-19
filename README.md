@@ -8,6 +8,11 @@ https://play.google.com/store/apps/details?id=com.vaishnavas.familygpslocator
 ##Preview
 
 
-![index](https://user-images.githubusercontent.com/60743167/93661091-acc48f00-fa72-11ea-812b-4728eb398c4d.jpeg)
-![index2](https://user-images.githubusercontent.com/60743167/93661151-2f4d4e80-fa73-11ea-9c31-95c38d5f3e2d.jpeg)
 ![index3](https://user-images.githubusercontent.com/60743167/93661155-35432f80-fa73-11ea-8833-29fb20880854.jpeg)
+
+
+![index2](https://user-images.githubusercontent.com/60743167/93661151-2f4d4e80-fa73-11ea-9c31-95c38d5f3e2d.jpeg)
+
+
+
+![index](https://user-images.githubusercontent.com/60743167/93661091-acc48f00-fa72-11ea-812b-4728eb398c4d.jpeg)
