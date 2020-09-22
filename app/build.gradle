@@ -3,20 +3,8 @@ apply plugin: 'com.google.gms.google-services'
 apply plugin: 'com.google.firebase.crashlytics'
 
 android {
-    signingConfigs {
-        locatorkey {
-            storeFile file('C:\\Users\\Viraj\\AndroidStudioProjects\\gpstracking.key')
-            storePassword 'Veer1024@'
-            keyAlias 'key0'
-            keyPassword 'Veer1024@'
-        }
-        config {
-            storeFile file('C:\\Users\\Viraj\\.android\\debug.keystore')
-            storePassword 'android'
-            keyAlias 'androiddebugkey'
-            keyPassword 'android'
-        }
-    }
+    
+    
     compileSdkVersion 30
     buildToolsVersion "30.0.0"
 
